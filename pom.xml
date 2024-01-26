@@ -22,9 +22,55 @@
     <java.release.version>17</java.release.version>
     <maven.source.encoding>UTF-8</maven.source.encoding>
     <suite-xml>test-suites/testng.xml</suite-xml>
+    <cucumber-java.version>7.15.0</cucumber-java.version>
+    <extentreports-cucumber7-adapter.version>1.14.0</extentreports-cucumber7-adapter.version>
+    <poi.version>5.2.5</poi.version>
+    <lombok.version>1.18.30</lombok.version>
+    <junit-jupiter-api.version>5.10.1</junit-jupiter-api.version>
+    <cucumber-junit.version>7.15.0</cucumber-junit.version>
   </properties>
 
   <dependencies>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-junit</artifactId>
+      <version>${cucumber-junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>${junit-jupiter-api.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.30</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi</artifactId>
+      <version>${poi.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+    <dependency>
+      <groupId>tech.grasshopper</groupId>
+      <artifactId>extentreports-cucumber7-adapter</artifactId>
+      <version>${extentreports-cucumber7-adapter.version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+    <dependency>
+      <groupId>io.cucumber</groupId>
+      <artifactId>cucumber-java</artifactId>
+      <version>${cucumber-java.version}</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/com.microsoft.playwright/playwright -->
     <dependency>
       <groupId>com.microsoft.playwright</groupId>
